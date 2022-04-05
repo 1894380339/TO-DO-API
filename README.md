@@ -14,6 +14,7 @@ Deploy source code to localhost:
 
 
 ```
+```
 Database:
    - Connect database:
       + Update database section in settings.py file with the following setting:
