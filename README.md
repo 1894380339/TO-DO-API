@@ -1,30 +1,36 @@
 # TO-DO-API
 #Introduction
 ```
-##Cài đặt:
-1. Cơ sở dữ liệu:
-   - Create database d
-  
-   Lấy CSDL [tại link này](https://drive.google.com/file/d/1h8eUZ-pnQnYBI94OZlnGaKzy9ZuDQgrH/view?usp=sharing)
+##Deploy source code to localhost:
+1. 
+   - Install libraries: Django, djangorestframework, PyJWT, django-cors-headers, datetime
+     + pip install django
+     + pip install djangorestframework
+     + pip install django-cors-headers
+     + pip install datetime
+   - Start Project:
+     + python manage.py runserver <port>
+     + <port>: 8000
+###Database:
+   - Connect database:
+      + Update database section in settings.py file with the following setting:
+         DATABASES = {
+          'default': {
+              'ENGINE': 'django.db.backends.mysql',
+              'NAME'    : 'mydata', 
+              'USER'    : 'root',
+              'PASSWORD': '',
+              'HOST'    : 'localhost',
+              'PORT'    : '3306',
+                   }
+               }
+    - Create database: run in terminal
+      + python manage.py makemigrations
+      + python manage.py migration
+      Database is used in testing: [link](https://drive.google.com/file/d/1h8eUZ-pnQnYBI94OZlnGaKzy9ZuDQgrH/view?usp=sharing)
 
-2. Deploy source code to localhost:
 
-   - Install libraries:
-    - Django: 
-
-- 2.1 Cài đặt app giảng viên ( Project: *AttendanceOnlineAdminSocket*)
-  - Thêm project vào Android StudioFile
-    - File =>New =>Import project... =>chọn đường dẫn file=>*chọn OK*
-  - Tiến hành build project.
-
-- 2.2 Cài đặt app sinh viên ( Project: *AttendanceOnline*)
-  - Thêm project vào Android Studio
-    - New => Import project... => chọn đường dẫn file =>*chọn OK*
-  - Kết nối CSDL
-    - Trên thanh công cụ chọn *Tools*=>*Firebase*=>*RealTime Database*=>*Save and retrieve*=>*Connection*=>*Chuyển đến trang Firebase*=>*Chọn CSDL Attendance Online ở phần 1*=>*Quay lại Android studio*=>*Chọn lại "Connection" bấm "Sync"*.
-  - Tiến hành build project.   
-  
-###Thư viện sử dụng
+Thư viện sử dụng
 1. App giảng viên
 ```
     //Google Support
