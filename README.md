@@ -28,6 +28,8 @@ Database:
               'PORT'    : '3306',
                    }
                }
+```
+```
     - Create database: run in terminal
       + python manage.py makemigrations
       + python manage.py migration
