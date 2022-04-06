@@ -1,0 +1,44 @@
+DESCRIPTION FOR API
+
+- API 1:SIN-UP
+INPUT:'username','email','password','password2'
+POST Request từ user là thông tin intput được đưa qua serializer, nếu data của serializer có đầy đủ các trường(fields) thì ta gọi phương thức save() 
+trong Singup_serializer, phương thức này sẽ kiểm tra 2 passwork có trùng khớp không và được băm và lưu vào CSDL
+
+- API 2: SING-IN
+INPUT:'username','email','password'
+POST Request từ user là thông input thông tin input sẽ được kiểm tra có chính xác không(user sai reponse "User not found", passwprd sai response "Incorrect Password").
+Thông tin qua serializer, api sẽ gọi hàm tạo jwt cho UserSerializer và respone thông tin có chứa thông tin user và mã jwt để chứng thực
+
+- API 3:ADD-TO-DO
+INPUT: Task
+POST Request từ user là thông tin người dùng được đưa qua serializer,nếu data của serializer có đầy đủ các trường(fields) thì save serializer lại
+
+- API 4:UPDATE-TO-DO
+INPUT: Task
+PUT Request từ user là thông tin người dùng sẽ được kiểm status là completed chưa(status là completed-True response "Task status is COMPLETE, Unable to edit", 
+ngược lại lưu serializer 
+
+- API 5: REMOVE-TO-DO
+DELETE Request từ user là thông tin người dùng sẽ được kiểm status là completed chưa(status là completed-True response "Task status is COMPLETE, Unable to edit", 
+ngược lại xóa serializer 
+
+- API 6: GET-ALL-TO-DO
+PUT Request lấy toàn bộ todo, danh sách todo sẽ được đưa qua serializer và response ra dữ liệu serializer này.
+
+- API 7: GET-TO-DO-BY-ID
+INPUT: id_todo
+POST Request từ user là thông tin intput, lấy todo thông qua id và đưa qua serializer(Task_serializer) và response dữ liệu serializer
+
+- API 8: GET-ALL-USER
+PUT Request lấy toàn bộ user, danh sách user sẽ được đưa qua serializer và response ra dữ liệu serializer này.
+
+- API 9:TO DO 9 ASSIGN-TO-DO
+INPUT: Task
+T tương tự như API 3, tuy nhiên để serializer được lưu thì user từ request không được trùng với urser hiện tại đang đăng nhập bằng cách so sanh id user của request
+và id user đang đăng nhập(user_login = request.user)
+
+
+- API 10: GET-ALL-TASK-BY-USER
+INPUT: id_user
+POST Request từ user là thông tin intput, lấy todo thông qua id của user và đưa qua serializer(Task_serializer) và response dữ liệu serializer
