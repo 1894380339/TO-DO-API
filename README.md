@@ -30,7 +30,6 @@ Connect database:
                    }
                }
  
-```
                
   Create database: run in terminal
       + python manage.py makemigrations
