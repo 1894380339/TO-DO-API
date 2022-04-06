@@ -28,11 +28,10 @@ Deploy source code to localhost:
               'PORT'    : '3306',
                    }
                }
-```
-    - Create database: run in terminal
+               
+###Create database: run in terminal
       + python manage.py makemigrations
       + python manage.py migrate
       Database is used in testing: ![Tên link](https://drive.google.com/file/d/1h8eUZ-pnQnYBI94OZlnGaKzy9ZuDQgrH/view?usp=sharing) (&lt;a&gt;)
       [r2h]: http://github.com/github/markup/tree/master/lib/github/commands/rest2html
        Download sourse code [tại link này](https://github.com/duonghuan3005/Bao-Cao-Android). Chọn Code=>Download Zip
-      
