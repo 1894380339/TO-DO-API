@@ -12,8 +12,8 @@ Deploy source code to localhost:
      + python manage.py runserver <port>
      + <port>: 8000
 
-
-
+```
+```
 Connect database:
       + Update database section in settings.py file with the following setting:
          DATABASES = {
