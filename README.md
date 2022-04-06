@@ -1,5 +1,5 @@
 # TO-DO-API
-INTRODUCTION
+==INTRODUCTION==
 
 ```
 Deploy source code to localhost:
@@ -27,7 +27,7 @@ Connect database:
                    }
                }
                
-  Create database: run in terminal
+Create database: run in terminal
       + python manage.py makemigrations
       + python manage.py migrate
 ```
