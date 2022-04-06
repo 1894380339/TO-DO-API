@@ -37,7 +37,7 @@ Connect database:
                }
                
 Create database:
-    - In mysql, reate new database with name is mydata
+    - In mysql, create new database with name is mydata
     - In terminal, run:
       + python manage.py makemigrations
       + python manage.py migrate
