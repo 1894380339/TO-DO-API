@@ -13,8 +13,6 @@ Deploy source code to localhost:
      + <port>: 8000
 
 
-```
-
 
 Connect database:
       + Update database section in settings.py file with the following setting:
@@ -28,7 +26,6 @@ Connect database:
               'PORT'    : '3306',
                    }
                }
- ```
                
   Create database: run in terminal
       + python manage.py makemigrations
