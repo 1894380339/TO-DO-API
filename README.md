@@ -32,6 +32,6 @@ Database:
 ```
     - Create database: run in terminal
       + python manage.py makemigrations
-      + python manage.py migration
+      + python manage.py migrate
       Database is used in testing: [link](https://drive.google.com/file/d/1h8eUZ-pnQnYBI94OZlnGaKzy9ZuDQgrH/view?usp=sharing)
 ```
