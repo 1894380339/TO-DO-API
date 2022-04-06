@@ -41,7 +41,7 @@ Create database:
     - In terminal, run:
       + python manage.py makemigrations
       + python manage.py migrate
-    -  In mysql, Add data by SQL statements in file data_test
+    -  In mysql, Add sample data by SQL statements in file data_test
 ```
 
 Add_data file: [Link database](https://drive.google.com/file/d/1h8eUZ-pnQnYBI94OZlnGaKzy9ZuDQgrH/view?usp=sharing)
