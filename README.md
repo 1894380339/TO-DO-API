@@ -36,10 +36,13 @@ Connect database:
                    }
                }
                
-Create database: run in terminal
+Create database:
+    - In mysql, reate new database with name is mydata
+    - In terminal, run:
       + python manage.py makemigrations
       + python manage.py migrate
+    -  In mysql, Add data by SQL statements in file data_test
 ```
 
-Database is used in testing: [Link database](https://drive.google.com/file/d/1h8eUZ-pnQnYBI94OZlnGaKzy9ZuDQgrH/view?usp=sharing)
+Add_data file: [Link database](https://drive.google.com/file/d/1h8eUZ-pnQnYBI94OZlnGaKzy9ZuDQgrH/view?usp=sharing)
 
