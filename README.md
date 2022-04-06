@@ -3,12 +3,18 @@ INTRODUCTION
 
 ```
 Deploy source code to localhost:
-   - Install libraries: Django, djangorestframework, PyJWT, django-cors-headers, datetime
+   - Python Package: 
+   Django 4.0.3
+   djangorestframework 3.12.4
+   PyJWT 1.7.1
+   django-cors-headers 3.11.0
+   datetime 4.4
+   - Install:
      + pip install django
      + pip install djangorestframework
      + pip install django-cors-headers
      + pip install datetime
-   - Start Project:
+   - Start Project in localhost:
      + python manage.py runserver <port>
      + <port>: 8000
 
