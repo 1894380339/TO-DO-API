@@ -15,7 +15,9 @@ Deploy source code to localhost:
 
 ```
 
-   - Connect database:
+```
+
+Connect database:
       + Update database section in settings.py file with the following setting:
          DATABASES = {
           'default': {
@@ -27,8 +29,10 @@ Deploy source code to localhost:
               'PORT'    : '3306',
                    }
                }
+ 
+```
                
-###Create database: run in terminal
+  Create database: run in terminal
       + python manage.py makemigrations
       + python manage.py migrate
       Database is used in testing: ![Link database](https://drive.google.com/file/d/1h8eUZ-pnQnYBI94OZlnGaKzy9ZuDQgrH/view?usp=sharing) (&lt;a&gt;)
