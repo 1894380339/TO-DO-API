@@ -9,7 +9,9 @@ Deploy source code to localhost:
    PyJWT 1.7.1
    django-cors-headers 3.11.0
    datetime 4.4
+   mysqlclient 2.1.0
    - Install:
+     + pip install mysqlclient  
      + pip install django
      + pip install djangorestframework
      + pip install django-cors-headers
@@ -21,6 +23,7 @@ Deploy source code to localhost:
 ```
 ```
 Connect database:
+      + First, replace the 'django.db.backends.sqlite3' to 'django.db.backends.mysql'.  
       + Update database section in settings.py file with the following setting:
          DATABASES = {
           'default': {
