@@ -44,5 +44,5 @@ Create database:
     -  In mysql, Add sample data by SQL statements in file data_test
 ```
 
-Add_data file: [Link database](https://github.com/1894380339/TO-DO-API/blob/main/mydata.sql)
+data_test file: [Link database](https://github.com/1894380339/TO-DO-API/blob/main/mydata.sql)
 
