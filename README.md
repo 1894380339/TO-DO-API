@@ -1,7 +1,7 @@
 # TO-DO-API
 INTRODUCTION
 
-
+```
 Deploy source code to localhost:
    - Install libraries: Django, djangorestframework, PyJWT, django-cors-headers, datetime
      + pip install django
@@ -13,7 +13,7 @@ Deploy source code to localhost:
      + <port>: 8000
 
 ```
-```
+
 Connect database:
       + Update database section in settings.py file with the following setting:
          DATABASES = {
@@ -31,7 +31,7 @@ Connect database:
       + python manage.py makemigrations
       + python manage.py migrate
 ```
-```
+
 
       
       Database is used in testing: ![Link database](https://drive.google.com/file/d/1h8eUZ-pnQnYBI94OZlnGaKzy9ZuDQgrH/view?usp=sharing) (&lt;a&gt;)
