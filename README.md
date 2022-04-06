@@ -33,5 +33,5 @@ Deploy source code to localhost:
       + python manage.py makemigrations
       + python manage.py migrate
       Database is used in testing: [link](https://drive.google.com/file/d/1h8eUZ-pnQnYBI94OZlnGaKzy9ZuDQgrH/view?usp=sharing)
-      [Link text Here](https://link-url-here.org)
+       Download sourse code [tại link này](https://github.com/duonghuan3005/Bao-Cao-Android). Chọn Code=>Download Zip
       
